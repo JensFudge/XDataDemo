@@ -9,7 +9,9 @@ uses
   uArcheryClass in 'uArcheryClass.pas',
   uArcheryDB in 'uArcheryDB.pas',
   uArcheryService in 'uArcheryService.pas',
-  uArcheryServiceImplementation in 'uArcheryServiceImplementation.pas';
+  uArcheryServiceImplementation in 'uArcheryServiceImplementation.pas',
+  uLoginService in 'uLoginService.pas',
+  uLoginServiceImplementation in 'uLoginServiceImplementation.pas';
 
 {$R *.res}
 
