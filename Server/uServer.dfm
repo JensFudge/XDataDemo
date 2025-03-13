@@ -11,9 +11,13 @@ object ServerContainer: TServerContainer
     Dispatcher = SparkleHttpSysDispatcher
     EntitySetPermissions = <>
     SwaggerOptions.Enabled = True
+    SwaggerOptions.AuthMode = Jwt
     SwaggerUIOptions.Enabled = True
     SwaggerUIOptions.TryItOutEnabled = True
     Left = 216
     Top = 16
+    object XDataServerJWT: TSparkleJwtMiddleware
+      OnGetSecret = XDataServerJWTGetSecret
+    end
   end
 end
