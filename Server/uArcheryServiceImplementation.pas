@@ -10,6 +10,7 @@ uses
 type
   [ServiceImplementation]
   TArcheryService = class(TInterfacedObject, IArcheryService)
+
     Function Archers : TArchers;
     Function ArcheryResults : TArcherResults;
   end;
