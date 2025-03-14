@@ -71,4 +71,13 @@ object Form1: TForm1
       'mmoArchers')
     TabOrder = 5
   end
+  object btnGetResults: TButton
+    Left = 32
+    Top = 264
+    Width = 75
+    Height = 25
+    Caption = 'GetResults'
+    TabOrder = 6
+    OnClick = btnGetResultsClick
+  end
 end

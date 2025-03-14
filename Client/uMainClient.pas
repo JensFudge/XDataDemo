@@ -15,8 +15,10 @@ type
     edJwt: TLabeledEdit;
     btnGetArchers: TButton;
     mmoArchers: TMemo;
+    btnGetResults: TButton;
     procedure btnLogonClick(Sender: TObject);
     procedure btnGetArchersClick(Sender: TObject);
+    procedure btnGetResultsClick(Sender: TObject);
   private
     { Private declarations }
 
@@ -38,6 +40,17 @@ uLoginService,
 uArcheryService,
 uArcheryClass;
 
+
+procedure TForm1.btnGetResultsClick(Sender: TObject);
+begin
+  var lService := dmClient.XdataClient.Service<IArcheryService>;
+  var lArcherResults  := lService.ArcheryResults;
+  mmoArchers.Lines.Clear;
+  for var lArcherRes  in lArcherResults  do
+    begin
+      mmoArchers.Lines.Add(lArcherRes.CompetitionName + ' ' + lArcherRes.CompeitionResult.ToString);
+    end;
+end;
 
 procedure TForm1.btnLogonClick(Sender: TObject);
 begin
