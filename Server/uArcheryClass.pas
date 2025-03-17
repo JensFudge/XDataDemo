@@ -39,7 +39,7 @@ Type
       property ID : integer read FID write SetID;
       property ArcherID : Integer read FArcherID write SetArcherID;
       property CompetitionName : string read FCompetitionName write SetCompetitionName;
-      property CompeitionResult : Integer read FCompeitionResult write SetCompeitionResult;
+      property CompetitionResult : Integer read FCompeitionResult write SetCompeitionResult;
   end;
 
   TArcherResults = class(TObjectList<TArcherResult>)
