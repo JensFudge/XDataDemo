@@ -25,21 +25,21 @@ begin
    lArcherResult.ID := 1;
    lArcherResult.ArcherID := 1;
    lArcherResult.CompetitionName := 'World Championship';
-   lArcherResult.CompeitionResult := 1;
+   lArcherResult.CompetitionResult := 1;
    Result.Add(lArcherResult);
 
    lArcherResult := TArcherResult.Create;
    lArcherResult.ID := 2;
    lArcherResult.ArcherID := 1;
    lArcherResult.CompetitionName := 'Danish Championship';
-   lArcherResult.CompeitionResult := 1;
+   lArcherResult.CompetitionResult := 1;
    Result.Add(lArcherResult);
 
    lArcherResult := TArcherResult.Create;
    lArcherResult.ID := 3;
    lArcherResult.ArcherID := 1;
    lArcherResult.CompetitionName := 'Kings of Archery';
-   lArcherResult.CompeitionResult := 9;
+   lArcherResult.CompetitionResult := 9;
    Result.Add(lArcherResult);
 
 
@@ -47,28 +47,28 @@ begin
    lArcherResult.ID := 5;
    lArcherResult.ArcherID := 2;
    lArcherResult.CompetitionName := 'European Championship';
-   lArcherResult.CompeitionResult := 3;
+   lArcherResult.CompetitionResult := 3;
    Result.Add(lArcherResult);
 
    lArcherResult := TArcherResult.Create;
    lArcherResult.ID := 6;
    lArcherResult.ArcherID := 2;
    lArcherResult.CompetitionName := 'Nimes';
-   lArcherResult.CompeitionResult := 1;
+   lArcherResult.CompetitionResult := 1;
    Result.Add(lArcherResult);
 
    lArcherResult := TArcherResult.Create;
    lArcherResult.ID := 7;
    lArcherResult.ArcherID := 3;
    lArcherResult.CompetitionName := 'World Championship';
-   lArcherResult.CompeitionResult := 1;
+   lArcherResult.CompetitionResult := 1;
    Result.Add(lArcherResult);
 
    lArcherResult := TArcherResult.Create;
    lArcherResult.ID := 8;
    lArcherResult.ArcherID := 3;
    lArcherResult.CompetitionName := 'Olympic Games';
-   lArcherResult.CompeitionResult := 17;
+   lArcherResult.CompetitionResult := 17;
    Result.Add(lArcherResult);
 
 

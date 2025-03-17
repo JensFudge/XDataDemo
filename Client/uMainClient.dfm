@@ -72,12 +72,42 @@ object Form1: TForm1
     TabOrder = 5
   end
   object btnGetResults: TButton
-    Left = 32
-    Top = 264
+    Left = 319
+    Top = 144
     Width = 75
     Height = 25
     Caption = 'GetResults'
     TabOrder = 6
     OnClick = btnGetResultsClick
+  end
+  object mmoResults: TMemo
+    Left = 400
+    Top = 145
+    Width = 185
+    Height = 89
+    Lines.Strings = (
+      'mmoResults')
+    TabOrder = 7
+  end
+  object btnCreateXlsx: TButton
+    Left = 32
+    Top = 264
+    Width = 75
+    Height = 25
+    Caption = 'Create report'
+    TabOrder = 8
+    OnClick = btnCreateXlsxClick
+  end
+  object odXlsx: TOpenDialog
+    Filter = 'Template file (*.template.xlsx)|*.Template.xlsx'
+    Title = 'Open template file'
+    Left = 168
+    Top = 248
+  end
+  object sdReport: TSaveDialog
+    DefaultExt = '.xlsx'
+    Filter = 'Excel file (*.xlsx)|*.xlsx|Pdf fil (*.pdf)|*.pdf'
+    Left = 248
+    Top = 256
   end
 end
